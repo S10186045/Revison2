@@ -94,7 +94,6 @@ class RecipeController{
             print(error)
         }
         
-        
         return ingredient
     }
     

@@ -18,7 +18,7 @@ class RecipeTableViewController : UITableViewController {
         //Retrieve recipes and Ingredients from Core Data
         let recipeController:RecipeController = RecipeController()
         recipe = recipeController.RetrieveRecipe()
-        ingredient = recipeController.RetrieveIngredientFromRecipe(recipe: recipe)
+        //ingredient = recipeController.RetrieveIngredientFromRecipe(recipe: recipe)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -45,7 +45,7 @@ class RecipeTableViewController : UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         ingredient = recipeController.RetrieveIngredientFromRecipe(recipe: recipe[indexPath.row])
-    
+        
        
         //need to add in textlabel
         cell.textLabel?.text = recipe[indexPath.row].name

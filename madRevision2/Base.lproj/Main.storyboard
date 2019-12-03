@@ -10,7 +10,7 @@
         <!--Recipe Table View Controller-->
         <scene sceneID="HXR-CY-vSM">
             <objects>
-                <tableViewController id="Hck-e6-SMn" customClass="RecipeTableViewController" customModule="madRevision2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RecipeTableViewController" id="Hck-e6-SMn" customClass="RecipeTableViewController" customModule="madRevision2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="p4a-8R-e9l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,7 +93,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingredient 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AKg-1c-FDh">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingredient 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AKg-1c-FDh">
                                 <rect key="frame" x="20" y="385" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -130,6 +130,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DX5-cO-nxZ" secondAttribute="trailing" constant="20" id="278-bD-y8R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eF0-Kp-zfO" secondAttribute="trailing" constant="225" id="6Ve-a9-bWM"/>
                             <constraint firstItem="YVB-NL-EGI" firstAttribute="top" secondItem="7eg-Ex-XPe" secondAttribute="bottom" constant="30" id="6mD-Ul-yMx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AKg-1c-FDh" secondAttribute="trailing" constant="20" id="8nG-uK-9NF"/>
                             <constraint firstItem="D5F-QL-UXs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9If-Hy-9wd"/>
                             <constraint firstItem="eF0-Kp-zfO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BEx-Mm-8rm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L2E-Uf-IB8" secondAttribute="bottom" constant="180" id="DW3-rK-Mwv"/>
@@ -143,8 +144,10 @@
                             <constraint firstItem="L2E-Uf-IB8" firstAttribute="top" secondItem="D5F-QL-UXs" secondAttribute="bottom" constant="41" id="UX2-5F-Npx"/>
                             <constraint firstItem="7eg-Ex-XPe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="VwA-RY-ixt"/>
                             <constraint firstItem="7eg-Ex-XPe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VyZ-be-B8g"/>
+                            <constraint firstItem="AKg-1c-FDh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XmY-GE-Tih"/>
                             <constraint firstItem="AKg-1c-FDh" firstAttribute="top" secondItem="tJw-ga-Zxl" secondAttribute="bottom" constant="22" id="c3k-qa-h9e"/>
                             <constraint firstItem="YVB-NL-EGI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dXE-G9-d2p"/>
+                            <constraint firstItem="RXz-Zd-ceD" firstAttribute="top" secondItem="AKg-1c-FDh" secondAttribute="bottom" constant="24" id="gx1-JE-0FH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D5F-QL-UXs" secondAttribute="trailing" constant="20" id="hho-Nm-IvZ"/>
                             <constraint firstItem="RXz-Zd-ceD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lgW-yB-i8i"/>
                             <constraint firstItem="eF0-Kp-zfO" firstAttribute="top" secondItem="YVB-NL-EGI" secondAttribute="bottom" constant="32" id="wbT-I6-5XF"/>

@@ -31,11 +31,24 @@ class ViewController: UIViewController {
         let ingredient1:Ingredient = Ingredient(name: txtIngredient1.text!)
         
         recipeController.AddRecipe(recipe: recipe)
-        recipeController.AddIngredientToRecipe(recipe: recipe, ingredients: ingredient1)
+        recipeController.AddIngredientToRecipe(recipe: recipe, ingredient: ingredient1)
         
         txtRecipe.text = ""
         txtPreparationTime.text = ""
         txtIngredient1.text = ""
+        
+        let alertController = UIAlertController(title: "System", message: "Successfully Added", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
+            UIAlertAction in
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "RecipeTableViewController") as! RecipeTableViewController
+            self.present(nextViewController, animated: true, completion: nil)
+            NSLog("OK Pressed")
+        }
+
+        alertController.addAction(okAction)
+    
+        self.present(alertController, animated: true, completion: nil)
         
     }
     
